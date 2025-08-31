@@ -9,6 +9,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ShareLinkButton } from "@/components/share-link-button"
 import { getCapsuleByPublicId } from "@/lib/api"
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 export default async function CapsulePage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params
     const capsule = await getCapsuleByPublicId(id)

@@ -6,6 +6,9 @@ import { Clock, Lock, Unlock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getAllCapsules } from "@/lib/api";
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 export default async function CapsulesPage() {
     const capsules = await getAllCapsules();
 

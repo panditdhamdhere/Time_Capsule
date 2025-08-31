@@ -2,7 +2,7 @@
 import axios from "axios";
 import { Capsule } from "@/types/capsule";
 
-const API_BASE = "http://localhost:8000"; // change to the backend
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 export const getAllCapsules = async (): Promise<Capsule[]> => {
     const res = await axios.get(`${API_BASE}/capsules`);

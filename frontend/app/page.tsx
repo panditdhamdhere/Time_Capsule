@@ -6,6 +6,9 @@ import { Button } from "@/components/ui/button"
 // import { getAllUnlockedCapsules } from "@/lib/capsules"
 import { getAllCapsules } from "@/lib/api";
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const unlockedCapsules = await getAllCapsules();
 
