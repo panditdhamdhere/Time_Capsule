@@ -4,7 +4,7 @@ import { notFound } from "next/navigation"
 import { ArrowLeft, Lock, Calendar, Share2 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-// import { getCapsuleById } from "@/lib/capsules"
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ShareLinkButton } from "@/components/share-link-button"
 import { getCapsuleByPublicId } from "@/lib/api"
